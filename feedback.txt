@@ -1,0 +1,9 @@
+REMOVE .idea from project
+
+Оч хорошо, чуть позже поясню, почему не оч хорошо создавать
+3 экземпляра BufferedReader, но то в будущем)
+
+int calculation = lessonNumber * 45 + (lessonNumber / 2) * 5 + ((lessonNumber + 1) / 2 - 1) * 15;
+        System.out.println("End: " + (calculation / 60 + 9) + ":" + calculation % 60);
+
+        алгоритм правильный, но вот эти чудо числа лучше выносить в константы)
