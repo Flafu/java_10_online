@@ -80,7 +80,10 @@ public class Crud {
     void readAll() {
         for (int i = 0; i < cats.length; i++) {
             if(cats[i] != null) {
-                System.out.println("Cat: " + i + ", Name: " + cats[i].name + ", Color: " + cats[i].color + ", Age: " + cats[i].age);
+                System.out.println("Cat: " + i +
+                        ", Name: " + cats[i].name +
+                        ", Color: " + cats[i].color +
+                        ", Age: " + cats[i].age);
             }
         }
     }
