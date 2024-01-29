@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 public class Crud {
     Cats[] cats = new Cats[10];
 
-    void start() throws IOException {
+    public void start() throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         menu();
         String position = "";
@@ -17,14 +17,14 @@ public class Crud {
         }
     }
 
-    void menu() {
+    public void menu() {
         System.out.println();
         System.out.println("If you want create new cat please enter 1");
         System.out.println("If you want show all cats please enter 2");
         System.out.println("If you want exit please enter 3");
     }
 
-    void crud(String position, BufferedReader bufferedReader) throws IOException {
+    public void crud(String position, BufferedReader bufferedReader) throws IOException {
         switch (position) {
             case "1" -> create(bufferedReader);
             case "2" -> readAll();
@@ -32,7 +32,7 @@ public class Crud {
         }
     }
 
-    void create(BufferedReader bufferedReader) throws IOException {
+    public void create(BufferedReader bufferedReader) throws IOException {
         if (cats[cats.length - 1] == null) {
             createArray();
         }
@@ -69,7 +69,7 @@ public class Crud {
         }
     }
 
-    void createArray() {
+    public void createArray() {
         Cats[] newCats = new Cats[cats.length + 10];
         for (int i = 0; i < cats.length; i++) {
             newCats[i] = cats[i];
@@ -77,7 +77,7 @@ public class Crud {
         cats = newCats;
     }
 
-    void readAll() {
+    public void readAll() {
         for (int i = 0; i < cats.length; i++) {
             if(cats[i] != null) {
                 System.out.println("Cat: " + i +
