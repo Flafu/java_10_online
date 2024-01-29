@@ -36,24 +36,24 @@ public class Crud {
         if (cats[cats.length - 1] == null) {
             createArray();
         }
-        System.out.println("Please enter name kitty:");
+        System.out.println("Please enter cat's name:");
         String name = bufferedReader.readLine();
         while(!Cats.validateName(name)) {
-            System.out.println("Please enter name again: ");
+            System.out.println("Please enter cat's name correctly using only Latin/Cyrillic alphabet(up to 20 letters): ");
             name = bufferedReader.readLine();
         }
 
-        System.out.println("Please enter color your kitty:");
+        System.out.println("Please enter cat's color:");
         String color = bufferedReader.readLine();
         while(!Cats.validateColor(color)) {
-            System.out.println("Please enter color again: ");
+            System.out.println("Please enter cat's color correctly using only Latin/Cyrillic alphabet(up to 15 letters): ");
             color = bufferedReader.readLine();
         }
 
-        System.out.println("Please enter age your kitty:");
+        System.out.println("Please enter cat's age:");
         String ageNotEmpty = bufferedReader.readLine();
         while (ageNotEmpty.isEmpty() || !ageNotEmpty.matches("\\d+") || !Cats.validateAge(Integer.parseInt(ageNotEmpty))) {
-            System.out.println("Please enter age again: ");
+            System.out.println("Please enter cat's age correctly using only numbers(up to 30 years): ");
             ageNotEmpty = bufferedReader.readLine();
         }
 
