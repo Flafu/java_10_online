@@ -1,7 +1,11 @@
 package ua.com.alevel;
 
-public class Main {
-    public static void main(String[] args) {
 
+import java.io.IOException;
+
+public class Main {
+    public static void main(String[] args) throws IOException {
+        MenuOfApplication menuOfApplication = new MenuOfApplication();
+        menuOfApplication.test();
     }
 }
