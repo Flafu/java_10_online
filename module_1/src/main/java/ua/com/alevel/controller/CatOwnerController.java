@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class CatOwnerController {
-    CatOwnerService catOwnerService = new CatOwnerService();
+    private final CatOwnerService catOwnerService = new CatOwnerService();
 
     void start() throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
