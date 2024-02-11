@@ -7,3 +7,11 @@ int calculation = lessonNumber * 45 + (lessonNumber / 2) * 5 + ((lessonNumber + 
         System.out.println("End: " + (calculation / 60 + 9) + ":" + calculation % 60);
 
         алгоритм правильный, но вот эти чудо числа лучше выносить в константы)
+
+2-3 не плохо, засчитываю
+    однако)
+    public static boolean validateName(String name)
+    public static boolean validateColor(String color)
+    public static boolean validateAge(int age)
+
+    я бы выносил в отдельный класс-сервис и точно бы не делал эти методы статическими
