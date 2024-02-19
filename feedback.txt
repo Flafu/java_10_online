@@ -15,3 +15,5 @@ int calculation = lessonNumber * 45 + (lessonNumber / 2) * 5 + ((lessonNumber + 
     public static boolean validateAge(int age)
 
     я бы выносил в отдельный класс-сервис и точно бы не делал эти методы статическими
+
+м1 - оч не плохо
